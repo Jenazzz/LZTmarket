@@ -61,9 +61,9 @@ while True:
                 minutes_ago = (datetime.now() - server_time).total_seconds() / 60 - 180
                 
                 # Запустить файл script.js на Node.js
-                process = subprocess.Popen(['node', 'script.js'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                output, error = process.communicate()
-                output_str = output.decode('utf-8')
+               # process = subprocess.Popen(['node', 'script.js'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+               # output, error = process.communicate()
+               # output_str = output.decode('utf-8')
 
                 # Создание embed-сообщения для Discord
                 embed = discord.Embed(title="Minecraft account", description=f"Price: ```{account['price']} rubles```\n{output_str}", color=0x00ff00)
