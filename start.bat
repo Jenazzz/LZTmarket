@@ -1,0 +1,2 @@
+py LZTmarket.py
+pause
